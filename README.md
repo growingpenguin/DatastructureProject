@@ -32,7 +32,6 @@ read_csv()함수를 통해 Friend_Data2.csv를 읽어와  friend_df2의 datafram
 3.내 Data, 친구들 Data를 합쳐 하나의 csv 파일로 만들기 <br/>
 아까 형성한 Example_data의 dataframe와 Example2_data라는 다른 하나의 dataframe을 concat()함수를 통해 양 옆으로 붙여서 column을 추가한 형태의 dataframe인 Final_data를 만들고 이를 to_csv()함수를 통해 Final_data.csv의 csv파일로 형성한다. <br/>
 -merge, concat 함수 : dataframe을 합치는 데 이용됨
-<br/>
 Attribute 소개: <br/>
 TrashName attribute:어떤 쓰레기인지를 구분할 수 있을 만한 이름을 부여 <br/>
 -유사한 쓰레기는 겹치지 않게 숫자를 부여하여 이름을 지음 <br/>
