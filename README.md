@@ -49,7 +49,7 @@ TrashType attribute:  쓰레기의 종류(세부적으로 구분) <br/>
  TrashTransparency attribute: 쓰레기의 투명도 <br/>
 -이는 Boolean type으로 나타내며 투명하다면 True, 불투명하다면 False의 value를 지님 <br/>
 <br/>
-**3. 결과 및 효과(유형 효과, 또는 무형 효과)** <br/>
+**3. 결과 및 효과(유형 효과, 또는 무형 효과)**
  AVL 트리 <br/>
 Trash 클래스(AVL트리1 사용) <br/>
 AVL 트리1 용도 <br/>
