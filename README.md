@@ -25,12 +25,12 @@ Dataclassmate1~20.csv(기존의 교수님 주신 column들) 용도: <br/>
 쓰레기 data 중 한 개의 쓰레기가 담긴 사진을 고르는데 이용되며 각각의 고유한 쓰레기를 정의하는데 (Name의 value들이 다 unique하다) 이용된다. <br/>
 <br/>
 finalData.csv로 하나의 csv 파일로 합치기 <br/>
-1. 내 Data를 하나의 dataframe으로 만들기 <br/>
+1.내 Data를 하나의 dataframe으로 만들기 <br/>
 read_csv()함수를 통해 Data1.csv, Data2.csv를 읽어와서 df_mydata1,df_mydata2의  dataframe으로 각각 정의한 후 이들을 "Number"column을 중심으로 merge()해 Example_data라는 하나의 dataframe으로 합침. <br/>
-2. 친구들 Data를 하나의 dataframe으로 만들기 <br/>
+2.친구들 Data를 하나의 dataframe으로 만들기 <br/>
  read_csv()함수를 통해 다운로드 받은 20개의 친구들 Data.csv를 read_csv()함수를 통해 읽어온 후 쓰레기가 하나인 데이터만 쓰고 싶어서 <br/> 'df_classmatedata1[(df_classmatedata1['Rubbish']+df_classmatedata1['Plastics'] +df_classmatedata1['Cans']+df_classmatedata1['Glass']+df_classmatedata1['Papers'])==1] ' 이러한 방식으로 쓰레기가 하나인 data만 뽑았다.  이 조건에 해당하는 5개의 data를 각각 뽑아 df_classmatedata'번호'_sort의 dataframe으로 저장했다. 그 뒤 friend_df라는 dataframe을 형성해 이 dataframe들을 다 합쳤다.  <br/>
 read_csv()함수를 통해 Friend_Data2.csv를 읽어와  friend_df2의 dataframe으로 정의한 후  이들을 "Number"column을 중심으로 merge()해 Example2_data라는 하나의 dataframe으로 합침. <br/>
-3. 내 Data, 친구들 Data를 합쳐 하나의 csv 파일로 만들기 <br/>
+3.내 Data, 친구들 Data를 합쳐 하나의 csv 파일로 만들기 <br/>
 아까 형성한 Example_data의 dataframe와 Example2_data라는 다른 하나의 dataframe을 concat()함수를 통해 양 옆으로 붙여서 column을 추가한 형태의 dataframe인 Final_data를 만들고 이를 to_csv()함수를 통해 Final_data.csv의 csv파일로 형성한다. <br/>
 -merge, concat 함수 : dataframe을 합치는 데 이용됨
 <br/>
@@ -41,15 +41,15 @@ TrashWeight attribute: 쓰레기의 무게 <br/>
 -단위는 g <br/>
 TrashType attribute:  쓰레기의 종류(세부적으로 구분) <br/>
 -Ex. Plastic -> PE, PP <br/>
-- Trash Type에 따라 TrashPrice를 계산하였기 때문에 TrashType value들은 아래에 언급한 통계자료에 따라 명명 <br/>
+-Trash Type에 따라 TrashPrice를 계산하였기 때문에 TrashType value들은 아래에 언급한 통계자료에 따라 명명 <br/>
  TrashPrice attribute: 쓰레기를 처리하는 데의 비용 <br/>
-- 아래의 통계자료를 참고해서 재활용 가능한 쓰레기들의 경우에는 그램 수에 따른 가격으로 환산하여 나타냄 <br/>
+-아래의 통계자료를 참고해서 재활용 가능한 쓰레기들의 경우에는 그램 수에 따른 가격으로 환산하여 나타냄 <br/>
 -TrashLocation attribute: 쓰레기를 주운 위치 <br/>
 -위치는 역명을 기준으로 명명 <br/>
  TrashTransparency attribute: 쓰레기의 투명도 <br/>
 -이는 Boolean type으로 나타내며 투명하다면 True, 불투명하다면 False의 value를 지님 <br/>
 <br/>
-**3. 결과 및 효과(유형 효과, 또는 무형 효과)**
+**3. 문제 소개** <br/>
  AVL 트리 <br/>
 Trash 클래스(AVL트리1 사용) <br/>
 AVL 트리1 용도 <br/>
